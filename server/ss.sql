@@ -1,0 +1,7 @@
+
+
+PASSWORD = SHA2('password123', 256);
+
+INSERT  INTO `tb_admin`(`id_admin`,`username`,`email`,`namalengkap`,`password`,`type`,`avatar`) VALUES (1,'admin','admin@gmail.com','Administrator',SHA2('admin', 256),'admin','avatar.png'),(6,'baak','baak@gmail.com','Ka. BAAK',SHA2('baak1', 256),'baak','avatar.png'),(7,'baak2','baak2@gmail.com','Ka. BAAK 2',SHA2('admin', 256),'baak','avatar.png');
+
+INSERT  INTO `tb_anggota`(`id_anggota`,`nama`,`nip`,`tempat_lahir`,`tanggal_lahir`,`jenis_kelamin`,`pendidikan_terakhir`,`status_perkawinan`,`status_anggota`,`id_jabatan`,`id_kelompok`,`agama`,`alamat`,`no_ktp`,`no_rumah`,`no_handphone`,`email`,`password`,`id_admin`,`tanggal_pengangkatan`,`avatar`) VALUES (10,'Nalika Alzahra',41551,'Jakarta','1989-02-09','Perempuan','S1','Belum kawin','Karyawan tetap',3,1,'Islam','Komplek Permata Hijau No. 12',2147483647,12,2147483647,'pegawai@gmail.com',SHA2('user1', 256),'pegawai','2018-07-04','avatar.png'),(11,'Kendal Janner',144124,'Bandung','1990-07-10','Perempuan','S3','Belum kawin','Karyawan tetap',1,1,'Kristen Protestan','Komplek Permata Hijau No. 12',2147483647,21,2147483647,'pegawai1@gmail.com',SHA2('user2', 256),'pegawai1','2017-09-01','avatar.png'),(12,'Benjamin Aljabar R',412411,'Jakarta','1997-01-06','Laki-laki','SMP/SMA','Belum kawin','Karyawan kontrak',3,3,'Islam','Komplek Permata Hijau No. 12',2147483647,22,2147483647,'pegawai2@gmail.com',SHA2('admin', 256),'pegawai2','2018-02-06','avatar.png');
